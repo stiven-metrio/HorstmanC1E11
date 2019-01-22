@@ -20,6 +20,15 @@ public class Java_Ex11_AsciiUnicode {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String text = scan.nextLine();
+        for(int i=0;i<text.length();i++){
+            char c = text.charAt(i);
+            String ascii = Integer.toHexString(c);
+            if(true){
+                System.out.printf("%s\t%s%n",c,ascii);
+            }
+        }
     }
     
 }
+
+//It needs to be fixed for not ascii inputs
